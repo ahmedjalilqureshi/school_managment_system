@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="all" href="css/style.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Teacher's Portal</title>
+
+    <!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/component.css">
+
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style>
+	
+		/* width */
+		::-webkit-scrollbar {
+			width: 8px;
+			height: 10px;
+		}
+		
+		/* Track */
+		::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 5px grey; 
+			border-radius: 10px;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: rgb(31, 27, 61); 
+			border-radius: 8px;
+		}
+		
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background-color: rgb(4, 4, 22);
+		}
+
+ #stdinfo {
+	 width: auto;
+	 height: 230px;
+	 border:2px solid gainsboro;
+ }
+
+		</style>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-globe"></span> Logo</a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                  
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li><a href="#">Engage</a></li>
+							<li><a href="#">Pontificate</a></li>
+							<li><a href="#">Synergize</a></li>
+						</ul>
+					</li>    
+                </ul>
+				<!-- Log In Form -->
+				<!-- <form class="navbar-form navbar-right form-inline"> -->
+					<!-- <div class="form-group">
+						<label class="sr-only" for="emailAddress">Email address</label>
+						<input type="email" class="form-control" id="emailAddress" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="pwd">Password</label>
+						<input type="password" class="form-control" id="pwd" placeholder="Password">
+					</div> -->
+					<a href="/teacher_logout" class="navbar-form navbar-right form-inline">
+						 <button type="button"  class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-hand-up">  </span> Sign Out</button></a>
+				<!-- </form> -->
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<div class="jumbotron feature">
+		<div class="container">
+		
+			<div id="feature-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#feature-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#feature-carousel" data-slide-to="1"></li>
+					<li data-target="#feature-carousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<a href="#">
+							<img class="img-responsive" src="holder.js/1140x200?bg=9ACD32&text=Image%201" alt="">
+						</a>
+						<div class="carousel-caption">
+							<h3>Dramatically Engage</h3>
+							<p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+						</div>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img class="img-responsive" src="holder.js/1140x200?bg=9ACD32&text=Image%202" alt="">
+						</a>
+						<div class="carousel-caption">
+							<h3>Efficiently Unleash</h3>
+							<p>Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+						</div>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img class="img-responsive" src="holder.js/1140x200?bg=9ACD32&text=Image%203" alt="">
+						</a>
+						<div class="carousel-caption">
+							<h3>Proactively Pontificate</h3>
+							<p>Holistically pontificate installed base portals after maintainable products.</p>
+						</div>
+                    </div>	
+                    		  
+				</div>
+				<a class="left carousel-control" href="#feature-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#feature-carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+<div class="container-fluid">
+
+		<!-- Left Column -->
+		<div class="col-sm-3">
+
+			<!-- List-Group Panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<img src="images/child2.png" alt="">
+                    <h1 class="panel-title" style="font-size: 2.5em; font-weight: 400; font-family: calibri; padding: 12px; text-align: center;">
+						 Teacher Panel</h1>
+				</div>
+				<div class="list-group">
+					<!-- <a  class="list-group-item" onclick="student_fetch_all()">Students Record</a> -->
+					<!-- <a href="#" class="list-group-item">Students MarkSheets <span class="badge">New</span></a> -->
+					<!-- <a href="#" class="list-group-item">Attendence Record</a> -->
+					<a href="#schedule" class="list-group-item">Schedule</a>
+
+					<a href="#workshop" class="list-group-item">Workshop/Training</a>
+                    <a href="#" class="list-group-item">Teacher Assessment Points</a>
+					<a href="#" class="list-group-item">Paper Upload</a>
+
+					<!-- <a href="#" class="list-group-item">Objectively Innovate</a>
+                    <a href="#" class="list-group-item">Proactively Envisioned</a>
+                    <a href="#" class="list-group-item">Objectively Innovate</a>
+                    <a href="#" class="list-group-item">Proactively Envisioned</a>
+                    <a href="#" class="list-group-item">Objectively Innovate</a>
+					<a href="#" class="list-group-item">Proactively Envisioned</a> -->
+				</div>
+			</div>
+
+			<!-- Text Panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1 class="panel-title" style="font-size: 39px; text-align: center;"
+					><span class="glyphicon glyphicon-bullhorn" style="font-size: 22px;">
+
+					</span> &nbsp;Notices</h1>
+				</div>
+
+				<div class="panel-body">
+					<p>Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.</p>
+					<p><button class="btn btn-default">Engage</button></p>
+				</div>
+			</div>
+		
+		</div><!--/Left Column-->
+  
+  
+		<!-- Center Column -->
+		<div class="col-sm-6" id="fetch_content">
+			
+			<!--StudentMarksheetform -->
+
+            <div id="stdmarksheet">
+				<h1 style="text-align: center; border-bottom: 1.5px solid grey;">Search Student Information</h1><br>
+				
+				<input  type="search" name="search" class="form-control rounded-0 py-2 " placeholder="Search.." style="float: left; border:1.5px solid gainsboro; height: 30px; border-radius: 9px 9px 9px 9px; width: 300px;"><br><br>
+				<button class="btn btn-primary btn-lg" style="float: left;"><span class="glyphicon glyphicon-user">  </span>   Search</button>
+			</div>
+            <!-- StudentInfoArea -->
+			<center>
+
+				<div id="stdinfo" style="margin-top:63px;">
+								<p>Student Info Area </p>
+				</div>
+
+			</center>
+			<br>
+				<form action="">
+					<label style="float: left; height: 40px; line-height: 39px; border-radius: 9px 9px 9px 9px; background-color: #abaeb1; border-color:#b8daff; opacity: 1; color: #2c2c31; width: 400px;">Marksheet Title</label><br><br>
+				 	<input type="text" class="form-control rounded-0 py-2" placeholder="MarkSheet title" style="float: left; border:1.5px solid gainsboro; height: 50px; border-radius: 9px 9px 9px 9px; width: 300px;"><br><br>
+					 <br>
+					 <label style="float: left; height: 40px; line-height: 39px; border-radius: 9px 9px 9px 9px; background-color: #cce5ff; border-color:#b8daff; opacity: 1; color: #004085; width: 400px;">Upload Image/Picture</label><br>
+	                 <br>
+					<input type="file"  style="float:left; font-size: 22px; "><br><br>
+					<label style="float: left; height: 40px; line-height: 39px; border-radius: 9px 9px 9px 9px; background-color: #f8d7da; border-color:#f5c6cb; opacity: 1; color: #721c24; width: 400px;">Upload Marksheet in Pdf Form</label><br>
+					<br> 
+					<input type="file"  style="float:left; font-size: 22px; "><br><br>
+					<input type="hidden">
+					<button class="btn btn-primary btn-lg" style="float: left;"><span class="glyphicon glyphicon-hand-up">  </span>  Submit</button>
+				</form>
+                 
+
+			<!--  -->
+             <br><br>			
+			<div id="paperupload">
+					<form action="/paperUpload" method="POST" enctype="multipart/form-data">
+						<h1 style="text-align: center; border-bottom: 1.5px solid grey;">Paper Upload</h1>
+						
+						<br>
+						<input type="text" name="text" placeholder="Title of the paper" 
+						style="float:left; width: 360px; height:50px; border:1.4px solid gainsboro; border-radius: 9px 9px 9px 9px; padding: 12px; color: black;">
+						<Br><Br><Br>
+						<input type="file" name="paper"  style="float:left; font-size: 22px; "><br>
+						<br>
+						<textarea name="dese" id="" cols="70" rows="10" style="float:left; border-radius: 6px 6px 6px 6px; padding:12px;" placeholder="Description about Paper">
+                         
+						</textarea><br><br><br><br><br><br><br><br><br><br><br><br>
+						<button class="btn btn-primary btn-lg" style="float:left;" onClick="TestFileType(this.form.paper.value, ['.txt']);"
+						><span class="glyphicon glyphicon-hand-up">  </span> Submit</button>
+						
+					</form>
+				</div>
+				<br><br><br>
+			<div id="schedule">
+				<h3>Schedule</h3>
+				<img src="images/schedule.gif" width="100%" alt="">  
+			</div>
+		
+            <div id="workshop" style="border-top: 1.5px solid #5f5f5f; margin-top: 12px; padding-top: 12px;">
+				<h3>Workshop/Training</h3>
+				<img src="images/training.jpg" alt="" width="100%">
+				<hr>
+				<img src="images/dreamstime_ideas-800x450.jpg" alt="" width="100%">
+				<hr>
+				<img src="images/Primary-Teacher-Training.jpg" alt="" width="100%">
+			</div>				
+			
+			
+	            						 
+					  
+			   			
+   
+		   </div><!--/Center Column-->
+		   <!-- right column -->
+		<div class="col-sm-3">
+		<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="glyphicon glyphicon-scale"></span>
+						Teacher Bio 
+					</h3>
+				</div>
+				
+			</div>
+		
+	</div>
+
+			
+	  <!-- Right Column -->
+
+	</div><!--/container-fluid-->
+	<br>
+	<footer id="footer">
+		<div class="container">
+			<section>
+				<article class="col-1">
+					<h3>Contact</h3>
+					<ul>
+						<li class="address"><a href="#">151 W Adams St<br>Detroit, MI 48226</a></li>
+						<li class="mail"><a href="#">contact@harrisonuniversity.com</a></li>
+						<li class="phone last"><a href="#">(971) 536 845 924</a></li>
+					</ul>
+				</article>
+				<article class="col-2">
+					<h3>Forum topics</h3>
+					<ul>
+						<li><a href="#">Omnis iste natus error sit</a></li>
+						<li><a href="#">Nam libero tempore cum soluta</a></li>
+						<li><a href="#">Totam rem aperiam eaque </a></li>
+						<li><a href="#">Ipsa quae ab illo inventore veritatis </a></li>
+						<li class="last"><a href="#">Architecto beatae vitae dicta sunt </a></li>
+					</ul>
+				</article>
+				<article class="col-3">
+					<h3>Social media</h3>
+					<p>Temporibus autem quibusdam et aut debitis aut rerum necessitatibus saepe.</p>
+					<ul>
+						<li class="facebook"><a href="#">Facebook</a></li>
+						<li class="google-plus"><a href="#">Google+</a></li>
+						<li class="twitter"><a href="#">Twitter</a></li>
+						<li class="pinterest"><a href="#">Pinterest</a></li>
+					</ul>
+				</article>
+				<article class="col-4">
+					<h3>Newsletter</h3>
+					<p>Assumenda est omnis dolor repellendus temporibus autem quibusdam.</p>
+					<form action="#">
+						<input placeholder="Email address..." type="text">
+						<button type="submit">Subscribe</button>
+					</form>
+					<ul>
+						<li><a href="#"></a></li>
+					</ul>
+				</article>
+			</section>
+			<p class="copy">Copyright 2014 Harrison High School. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by Vandelay Design" target="_blank">Vandelay Design</a>. All rights reserved.</p>
+		</div>
+		<!-- / container -->
+	</footer>
+	
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- IE10 viewport bug workaround -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+	<!-- Placeholder Images -->
+	<script src="js/holder.min.js"></script>
+	<script src="js/jquery.stickyheader.js"></script>
+	 <script>
+		     
+		 	 function student_fetch_specific(){
+				 var name = document.getElementById("student-name").value;
+				 var xhttp = new XMLHttpRequest();
+				 xhttp.onreadystatechange = function() {
+   if (this.readyState == 4 && this.status == 200) {
+	   var obj = JSON.parse(this.responseText);
+	   var str =`<h1 style="font-weight: 380; padding-left: 2.5em;">Students&nbsp;  Personal Records </h1>
+			 <br>
+			 
+			<form class="form-inline search" role="search" style="float: left;">
+					<div class="form-group">
+						&nbsp; &nbsp; &nbsp;  <input type="text" id="student-name" class="form-control" style="width: 290px; height: 50px;">
+					</div>
+					<button onclick="student_fetch_specific()" type="button" class="btn btn-success"><span class="glyphicon glyphicon-search"></span> Search</button>
+				</form>
+			<div class="container-fluid" style="margin-top: -12px;" ><table>
+								<thead>
+									<tr>
+										<th>Student Name</th>
+										<th>Father Name</th>
+										<th>Phone</th>
+										<th>Class</th>
+										<th>Roll-Number</th>
+									</tr>
+								</thead>
+								<tbody>`
+	   for(var i=0 ; i<obj.length ; i++){
+				str += `<tr><td>`+obj[i].name+`</td><td>`+obj[i].father_name+`</td>
+					<td>`+obj[i].phone+`</td><td>`+obj[i].class+`</td>
+					<td>`+obj[i].roll_number+`</td></tr>`
+	   }
+	   str += `</tbody></table></div> `;
+	   console.log(str);
+	document.getElementById("fetch_content").innerHTML = str;
+   }
+ };
+ xhttp.open("GET", "/students/fetch_specific?name="+name, true);
+ xhttp.send();
+				
+		 }
+		 function student_fetch_all(){
+				// alert("hello");
+				 var xhttp = new XMLHttpRequest();
+				 xhttp.onreadystatechange = function() {
+   if (this.readyState == 4 && this.status == 200) {
+	   var obj = JSON.parse(this.responseText);
+	   var str =`<h1 style="font-weight: 380; padding-left: 2.5em;">Students&nbsp;  Personal Records </h1>
+			 <br>
+			 
+			<form class="form-inline search" role="search" style="float: left;" >
+					<div class="form-group">
+						&nbsp; &nbsp; &nbsp;  <input type="text" id="student-name" class="form-control" style="width: 290px; height: 50px;">
+					</div>
+					<button onclick="student_fetch_specific()" type="button" class="btn btn-success"><span class="glyphicon glyphicon-search"></span> Search</button>
+				</form>
+			<div class="container-fluid" style="margin-top: -12px;" ><table>
+								<thead>
+									<tr>
+										<th>Student Name</th>
+										<th>Father Name</th>
+										<th>Phone</th>
+										<th>Class</th>
+										<th>Roll-Number</th>
+									</tr>
+								</thead>
+								<tbody>`
+	   for(var i=0 ; i<obj.length ; i++){
+				str += `<tr><td>`+obj[i].name+`</td><td>`+obj[i].father_name+`</td>
+					<td>`+obj[i].phone+`</td><td>`+obj[i].class+`</td>
+					<td>`+obj[i].roll_number+`</td></tr>`
+	   }
+	   str += `</tbody></table></div>`;
+	   console.log(str);
+	document.getElementById("fetch_content").innerHTML = str;
+   }
+ };
+ xhttp.open("GET", "/students/fetch_all", true);
+ xhttp.send();
+				
+		 }
+	 </script>
+
+
+<script type="text/JavaScript">
+
+	function TestFileType( fileName, fileTypes ) {
+	if (!fileName) return;
+	
+	dots = fileName.split(".")
+	//get the part AFTER the LAST period.
+	fileType = "." + dots[dots.length-1];
+	
+	return (fileTypes.join(".").indexOf(fileType) != -1) ?
+	alert('That file is OK!') : 
+	alert("Please only upload files that end in types: \n\n" + (fileTypes.join(" .")) + "\n\nPlease select a new file and try again.");
+	}
+	// -->
+	</script>
+	
+	
+</body>
+
+</html>

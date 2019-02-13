@@ -1,0 +1,181 @@
+ <div class="card-body card-block">
+                            <form action="/addStudent" method="post" enctype="multipart/form-data" class="form-horizontal">
+                               
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="text-input" class=" form-control-label">Name</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="text-input" name="name" placeholder="Enter Name" class="form-control">
+                                        <small class="form-text text-muted">Please enter student name</small>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="email-input" class=" form-control-label">Father Name</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" id="email-input" name="father_name" placeholder="Enter Father Name"
+                                            class="form-control">
+                                        <small class="help-block form-text text-muted">Please enter student father name</small>
+                                    </div>
+                                </div>
+                                <!-- Contact Number -->
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="password-input" class=" form-control-label">Contact Number</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" name="phone" placeholder="Enter Contact Number" class="form-control">
+                                        <small class="help-block form-text text-muted">Please enter Guardian Number</small>
+                                    </div>
+                                </div>
+                                <!-- Contact Number End -->
+                                <!-- Age -->
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="password-input" class=" form-control-label">Age</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="number" name="age" placeholder="Enter Age" class="form-control">
+                                        <small class="help-block form-text text-muted">Please enter student age</small>
+                                    </div>
+                                </div>
+                                <!-- Age End -->
+                                <!-- CNIC -->
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="disabled-input" class=" form-control-label">CNIC</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="number" name="cnic" placeholder="Enter CNIC" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- CNIC end -->
+
+                                <!-- Father CNIC -->
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="disabled-input" class=" form-control-label">Father CNIC</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="number" name="father_cnic" placeholder="Enter Student Father CNIC" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Father CNIC end -->
+                                <div class="row form-group">
+                                    <!-- Roll Number -->
+                                    <div class="col col-md-3">
+                                        <label for="disabled-input" class=" form-control-label">Roll Number</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="number" name="roll_number" placeholder="Enter Student Roll Number" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Roll Number End -->
+                                <!-- username -->
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="email-input" class=" form-control-label">Username</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="text" name="username" placeholder="Enter Student Username" class="form-control">
+                                        <small class="help-block form-text text-muted">Please enter your username</small>
+                                    </div>
+                                </div>
+                                <!-- username end -->
+
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="password-input" class=" form-control-label">Password</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="password" name="password" placeholder="Enter Student Password" class="form-control">
+                                        <small class="help-block form-text text-muted">Please enter a Password</small>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="select" class=" form-control-label">Class</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="class" id="select" class="form-control">
+                                            <option value="0">Please select class</option>
+                                            <option value="PlayGroup">PlayGroup</option>
+                                            <option value="Nursery">Nursery</option>
+                                            <option value="K.G-1">K.G-1</option>
+                                            <option value="K.G-2">K.G-2</option>
+                                            <option value="Class 1">Class 1</option>
+                                            <option value="Class 2">Class 2</option>
+                                            <option value="Class 3">Class 3</option>
+                                            <option value="Class 4">Class 4</option>
+                                            <option value="Class 5">Class 5</option>
+                                            <option value="Class 6">Class 6</option>
+                                            <option value="Class 7">Class 7</option>
+                                            <option value="Class 8">Class 8</option>
+                                            <option value="Class 9">Class 9</option>
+                                            <option value="Class 10">Class 10</option>
+                                            <option value="Class 11">Class 11</option>
+                                            <option value="Class 12">Class 12</option>
+                                            <option value="O-Level I">O-Level I</option>
+                                            <option value="O-Level II">O-Level II</option>
+                                            <option value="O-Level III">O-Level III</option>
+                                            <option value="A-Level I">A-Level I</option>
+                                            <option value="A-Level II">A-Level II</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- section -->
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="select" class=" form-control-label">Section</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="section" id="select" class="form-control">
+                                            <option value="0">Please select section</option>
+                                            <option value="PlayGroup">A</option>
+                                            <option value="Nursery">B</option>
+                                            <option value="K.G-1">C</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- section end -->
+
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label class=" form-control-label">Gender</label>
+                                    </div>
+                                    <div class="col col-md-9">
+                                        <div class="form-check-inline form-check">
+                                            <label for="inline-radio1" class="form-check-label ">
+                                                <input type="radio" name="gender" value="Male" class="form-check-input">Male
+                                            </label>
+                                            <label for="inline-radio2" class="form-check-label ">
+                                                <input type="radio" name="gender" value="Female" class="form-check-input">Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col col-md-3">
+                                        <label for="file-input" class=" form-control-label">File input</label>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <input type="file" id="file-input" name="file-input" class="form-control-file">
+                                    </div>
+                                </div>
+
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-dot-circle-o"></i> Submit
+                                    </button>
+                                    <button type="reset" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-ban"></i> Reset
+                                    </button>
+                                </div>
+                                </form>
+                        </div>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="all" href="css/style.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Student Portal</title>
+
+    <!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/component.css">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style>
+
+		/* width */
+		::-webkit-scrollbar {
+			width: 8px;
+			height: 10px;
+		}
+		
+		/* Track */
+		::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 5px grey; 
+			border-radius: 10px;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: rgb(31, 27, 61); 
+			border-radius: 8px;
+		}
+		
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #b30000; 
+		}
+		</style>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-globe"></span> Logo</a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                  
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li><a href="#">Engage</a></li>
+							<li><a href="#">Pontificate</a></li>
+							<li><a href="#">Synergize</a></li>
+						</ul>
+					</li>    
+                </ul>
+				<!-- Log In Form -->
+				<form class="navbar-form navbar-right form-inline">
+					<!-- <div class="form-group">
+						<label class="sr-only" for="emailAddress">Email address</label>
+						<input type="email" class="form-control" id="emailAddress" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="pwd">Password</label>
+						<input type="password" class="form-control" id="pwd" placeholder="Password">
+					</div> -->
+					<a href="/student_logout"  class="btn btn-success btn-lg">Sign Out</a>
+				</form>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<div class="jumbotron feature">
+		<div class="container">
+		
+			<div id="feature-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#feature-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#feature-carousel" data-slide-to="1"></li>
+					<li data-target="#feature-carousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<a href="#">
+							<img class="img-responsive" src="holder.js/1140x200?bg=9ACD32&text=Image%201" alt="">
+						</a>
+						<div class="carousel-caption">
+							<h3>Dramatically Engage</h3>
+							<p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+						</div>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img class="img-responsive" src="holder.js/1140x200?bg=9ACD32&text=Image%202" alt="">
+						</a>
+						<div class="carousel-caption">
+							<h3>Efficiently Unleash</h3>
+							<p>Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+						</div>
+					</div>
+					<div class="item">
+						<a href="#">
+							<img class="img-responsive" src="holder.js/1140x200?bg=9ACD32&text=Image%203" alt="">
+						</a>
+						<div class="carousel-caption">
+							<h3>Proactively Pontificate</h3>
+							<p>Holistically pontificate installed base portals after maintainable products.</p>
+						</div>
+                    </div>	
+                    		  
+				</div>
+				<a class="left carousel-control" href="#feature-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#feature-carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+<div class="container-fluid">
+
+		<!-- Left Column -->
+		<div class="col-sm-3">
+
+			<!-- List-Group Panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+                    <h1 class="panel-title" style="font-size: 1.8em; letter-spacing: 1.5px; padding: 12px; text-align: center; font-weight: 400;"> Student Panel</h1>
+				</div>
+				<div class="list-group">
+					<a href="#" class="list-group-item" >Marksheets</a>
+					<a href="#" class="list-group-item" >Test Records</a>
+					<a href="#" class="list-group-item" >Dues Status</a>
+
+
+					<!-- <button class="list-group-item" style="text-align: center;" onclick="marksheets_fetch('<%=  %>','<%=  %>')">Student Marksheets</button> -->
+					<!-- <a href="#" class="list-group-item" >Student Attendence</a>
+                    <a href="#" class="list-group-item" >Proactively Envisioned</a>
+                    <a href="#" class="list-group-item" >Objectively Innovate</a>
+                    <a href="#" class="list-group-item" >Proactively Envisioned</a>
+                    <a href="#" class="list-group-item" >Objectively Innovate</a>
+					<a href="#" class="list-group-item" >Proactively Envisioned</a> -->
+				</div>
+			</div>
+
+			<!-- Text Panel -->
+			
+		
+		</div><!--/Left Column-->
+  
+  
+		<!-- Center Column -->
+		<div class="col-sm-6">
+					<!-- StudentInfoArea -->
+					<center>
+		          
+						<div id="stdinfo" style="height: 500px; margin-top:63px; border:1.5px solid gainsboro; border-radius: 9px 9px 9px 9px; padding: 12px;">
+							            <p style=" font-size: 26px; font-family: arial; float: left; color: black; ">Paper title</p><br>
+										<p style=" font-size: 22px; font-family: arial; float: left; color: black; padding-top: 12px;">Name : Sir Hasan</p>
+										
+										<img src="images/students.jpg" style="padding-top: 12px;" width="100%" alt="">
+										<a href="#" style="cursor: pointer;">
+										<label style="float: left; height: 40px; line-height: 39px; border-radius: 9px 9px 9px 9px; margin-top: 12px; background-color: #abaeb1; border-color:#b8daff; opacity: 1; color: #2c2c31; width: 400px;">Marksheet Title</label><br><br>
+									</a>
+						</div>
+                     		
+					</center>
+		
+
+              
+
+			<div id="timetable">
+				<!-- <img src="images/timetable.jpg" width="100%" alt=""> -->
+			</div>
+		   
+             			
+
+		</div><!--/Center Column-->
+
+
+	  <!-- Right Column -->
+	  <div class="col-sm-3">
+ 
+			
+			<!--student bio-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<span class="glyphicon glyphicon-scale"></span>
+						Student Bio 
+					</h3>
+				</div>
+				<div class="panel-body">
+					<img src="images/child.png" alt=""><br>
+					<br>
+					<span style="font-weight: bold;" >Name: </span><label id="name1"> <%= student.name %> </label><br>
+					<span style="font-weight: bold;" >Father Name: </span><label id="f_name"><%= student.father_name %></label><br>
+					<span style="font-weight: bold;" >Age: </span><label id="Age"><%= student.age %></label><br>
+					<span style="font-weight: bold;" >Gender </span><label id="Gender"><%= student.gender %></label><br>
+					<span style="font-weight: bold;" >Class </span><label id="Class"><%= student.class %></label><br>
+					<span style="font-weight: bold;" >Section: </span><label id="sec"><%= student.section %></label><br>
+					<span style="font-weight: bold;" >Rollno: </span><label id="Roll_no"><%= student.roll_number  %></label><br>
+
+
+				</div>
+			</div>
+			<!-- Text Panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title" style="font-size: 20px;">
+						<span class="glyphicon glyphicon-bullhorn"></span>&nbsp; 
+						Notices
+					</h3>
+				</div>
+				<div class="panel-body">
+					<p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a galley of type and scrambled it to make a type 
+						specimen book. It has survived not only five centuries, but also the leap into 
+						electronic typesetting, remaining essentially unchanged. It was popularised in
+						 the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+						and more recently with desktop publishing software like Aldus PageMaker 
+						including versions of Lorem Ipsum.
+
+				    </p>
+					
+				</div>
+			</div>
+
+
+	  </div><!--/Right Column -->
+
+	</div><!--/container-fluid-->
+	
+	<footer id="footer">
+		<div class="container">
+			<section>
+				<article class="col-1">
+					<h3>Contact</h3>
+					<ul>
+						<li class="address"><a href="#">151 W Adams St<br>Detroit, MI 48226</a></li>
+						<li class="mail"><a href="#">contact@harrisonuniversity.com</a></li>
+						<li class="phone last"><a href="#">(971) 536 845 924</a></li>
+					</ul>
+				</article>
+				<article class="col-2">
+					<h3>Forum topics</h3>
+					<ul>
+						<li><a href="#">Omnis iste natus error sit</a></li>
+						<li><a href="#">Nam libero tempore cum soluta</a></li>
+						<li><a href="#">Totam rem aperiam eaque </a></li>
+						<li><a href="#">Ipsa quae ab illo inventore veritatis </a></li>
+						<li class="last"><a href="#">Architecto beatae vitae dicta sunt </a></li>
+					</ul>
+				</article>
+				<article class="col-3">
+					<h3>Social media</h3>
+					<p>Temporibus autem quibusdam et aut debitis aut rerum necessitatibus saepe.</p>
+					<ul>
+						<li class="facebook"><a href="#">Facebook</a></li>
+						<li class="google-plus"><a href="#">Google+</a></li>
+						<li class="twitter"><a href="#">Twitter</a></li>
+						<li class="pinterest"><a href="#">Pinterest</a></li>
+					</ul>
+				</article>
+				<article class="col-4">
+					<h3>Newsletter</h3>
+					<p>Assumenda est omnis dolor repellendus temporibus autem quibusdam.</p>
+					<form action="#">
+						<input placeholder="Email address..." type="text">
+						<button type="submit">Subscribe</button>
+					</form>
+					<ul>
+						<li><a href="#"></a></li>
+					</ul>
+				</article>
+			</section>
+			<p class="copy">Copyright 2014 Harrison High School. Designed by <a href="http://www.vandelaydesign.com/" title="Designed by Vandelay Design" target="_blank">Vandelay Design</a>. All rights reserved.</p>
+		</div>
+		<!-- / container -->
+	</footer>
+	
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- IE10 viewport bug workaround -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+	<!-- Placeholder Images -->
+	<script src="js/holder.min.js"></script>
+	
+</body>
+<script src="js/jquery.stickyheader.js"></script>
+<script>
+	function marksheets_fetch(email,password){
+	 var xhttp = new XMLHttpRequest();
+	 xhttp.onreadystatechange = function() {
+	   if (this.readyState == 4 && this.status == 200) {
+		   var res = this.responseText;
+		   var obj = JSON.parse(res);
+		   var text= "<div>";
+		   for(var i=0;i<obj.length;i++){
+			   text += `<h3>`+obj[i].title+`</h3><table  class="table table-bordered" >`;
+				for (var j=0;j<obj[i].subjects.length;j++){
+					text += `<tr><th>`+obj[i].subjects[j].name+`</th><td>`+obj[i].subjects[j].marks+`</td></tr>`
+				}
+				 
+		   }
+		   text += "</table></div>";
+		document.getElementById("test").innerHTML = text;
+	   }
+	 };
+	 xhttp.open("GET", "/student/marksheets?email="+email+"&password="+password, true);
+	 xhttp.send();
+	}
+</script>
+</html>

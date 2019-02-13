@@ -1,0 +1,20 @@
+{
+  "name": "school-portal",
+  "version": "1.0.0",
+  "description": "A complete school website with portal (cms) support",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "neural-stack",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "formidable": "^1.2.1",
+    "mongoose": "^5.2.4",
+    "nodemon": "^1.18.3"
+  }
+}
